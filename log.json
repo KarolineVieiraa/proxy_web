@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": "2026-05-26 18:41:57",
+    "url": "http://www.w3schools.com/lib/fonts/fontawesome.woff?14663396",
+    "action": "permitido"
+  },
+  {
+    "timestamp": "2026-05-26 18:41:57",
+    "url": "http://www.w3schools.com/lib/fonts/montserrat-v18-latin-regular.ttf",
+    "action": "permitido"
+  },
+  {
+    "timestamp": "2026-05-26 18:54:45",
+    "url": "http://localhost:8000/",
+    "action": "permitido"
+  },
+  {
+    "timestamp": "2026-05-26 18:56:43",
+    "url": "http://localhost:8000/index.html",
+    "action": "filtrado"
+  },
+  {
+    "timestamp": "2026-05-26 19:00:41",
+    "url": "http://http://localhost:8000",
+    "action": "erro: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: //localhost:8000 (Caused by NameResolutionError(\"HTTPConnection(host='http', port=80): Failed to resolve 'http' ([Errno 11001] getaddrinfo failed)\"))"
+  },
+  {
+    "timestamp": "2026-05-26 19:04:24",
+    "url": "http://http://localhost:8000/",
+    "action": "erro: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: //localhost:8000/ (Caused by NameResolutionError(\"HTTPConnection(host='http', port=80): Failed to resolve 'http' ([Errno 11001] getaddrinfo failed)\"))"
+  },
+  {
+    "timestamp": "2026-05-26 19:05:34",
+    "url": "http://http://localhost:8000",
+    "action": "erro: HTTPConnectionPool(host='http', port=80): Max retries exceeded with url: //localhost:8000 (Caused by NameResolutionError(\"HTTPConnection(host='http', port=80): Failed to resolve 'http' ([Errno 11001] getaddrinfo failed)\"))"
+  },
+  {
+    "timestamp": "2026-05-26 19:06:07",
+    "url": "http://localhost:8000/index.html",
+    "action": "filtrado"
+  }
+]
