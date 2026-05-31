@@ -1,0 +1,91 @@
+/* Importando uma fonte delicada */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+/* Estilo base global */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Dancing Script', cursive !important;
+    color: #FF1493 !important;
+    display: flex !important;
+    text-align: center !important;
+}
+
+/* Classes de fundo */
+.bg-lobby { background-image: url('images/SuperPoderosasLoby.jpg'); }
+.bg-block { background-image: url('images/SuperPoderosasBlock.jpg'); }
+.bg-http  { background-image: url('images/SuperPoderosasHTTPS.jpg'); }
+
+/* Container central */
+.container {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 8px 32px rgba(255, 105, 180, 0.3);
+    border: 3px solid #FF69B4 !important;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Títulos e Parágrafos */
+h1 {
+    color: #FF1493 !important;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px #fff, -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 0px #fff;
+}
+
+p, span {
+    color: #FF1493 !important;
+    font-size: 1.6em !important;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+input[type="text"] {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 3px solid #FF69B4 !important;
+    font-size: 1.4em !important;
+    width: 250px;
+    color: #FF1493 !important;
+    font-family: 'Dancing Script', cursive !important;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Botões */
+button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #FF69B4 !important;
+    color: white !important;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: 'Dancing Script', cursive;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FF1493 !important;
+    transform: scale(1.05);
+}
+
+.bg-flores { 
+    background-image: url('images/Flores.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+h1, p, b {
+    color: #FF1493 !important;
+}
