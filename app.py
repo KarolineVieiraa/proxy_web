@@ -51,27 +51,6 @@ def load_blocked_sites():
 def load_words():
     return _cached_words
 
-'''PARTE DO CÓDIGO DESATIVADA, POIS A LÓGICA FOI REESCRITA PARA USAR CACHE E EVITAR LEITURA DE DISCO EM CADA REQUISIÇÃO
-#função para carregar os sites bloqueados em JSON
-def load_blocked_sites():
-    #Essa função tenta abrir o arquivo 'blocked.json' e carregar a lista de sites bloqueados.
-    try:
-        with open('blocked.json', 'r', encoding='utf-8') as f:
-            data = json.load(f) #Carrega o conteúdo do arquivo JSON em um dicionário Python
-            return data.get('bloqueados', [])#Acessa a chave 'bloqueados' do dicionário e retorna a lista associada a essa chave.
-    except FileNotFoundError:#Se o arquivo 'blocked.json' não for encontrado, a função captura a exceção FileNotFoundError
-        return []#Se o arquivo não existir, ela retorna uma lista vazia.
-
-#Essa função carrega o dicionário de palavras que serão substituídas
-def load_words():
-    #Essa função tenta abrir o arquivo 'words.json' e carregar o dicionário de palavras.
-    try:
-        with open('words.json', 'r', encoding='utf-8') as f:
-            return json.load(f)#Carrega o conteúdo do arquivo JSON em um dicionário Python e o retorna.
-    except FileNotFoundError:#Se o arquivo 'words.json' não for encontrado, a função captura a exceção FileNotFoundError
-        return {} #Se o arquivo não existir, ela retorna um dicionário vazio.
-'''
-
 #Essa função escreve no ficheiro log.json cada tentativa de acesso
 def log_access(url, action):
     #Essa função registra o acesso a um URL específico, juntamente com a ação realizada 
