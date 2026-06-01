@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Patrulha das Meninas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-lobby">
+    <div class="container">
+        <h1>🌸 Patrulha das meninas 🌸</h1>
+        <p>Insira a URL que deseja monitorar:</p>
+        
+        <form action="/" method="GET">
+            <input type="text" name="url" placeholder="http://exemplo.com" required>
+            <button type="submit">Ir para a Patrulha!</button>
+        </form>
+
+        <hr>
+        <button onclick="refreshCache()" class="btn-refresh">Atualizar Filtros</button>
+    </div>
+
+    <script>
+        function refreshCache() {
+            fetch('/refresh')
+                .then(response => response.text())
+                .then(data => alert(data))
+                .catch(err => alert("Erro ao atualizar!"));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+proxy/
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+
+__pycache__/
+*.pyc
+*.pyo
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+ModificaçõesDoFindi.txt

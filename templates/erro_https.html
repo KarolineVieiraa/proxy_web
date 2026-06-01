@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Proteção das Superpoderosas</title>
+    <style>
+        body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/SuperPoderosasHTTPS.jpg') }}" alt="Erro HTTPS">
+</body>
+<body class="bg-http">
+    <div class="container">
+        <h1>🌸 Ops! Proteção de Navegação 🌸</h1>
+        <p>O site que você acessou tentou migrar para uma conexão segura (HTTPS).</p>
+        <p>Nosso proxy didático foca em monitoramento HTTP. Para sua segurança, interrompemos a conexão.</p>
+        <a href="/">Voltar para a Patrulha</a>
+    </div>
+</body>
+</html>
